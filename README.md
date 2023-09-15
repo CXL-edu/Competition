@@ -12,11 +12,11 @@
 
 单层，单个3*3的卷积，score为0.04
 
-https://keras.io/examples/vision/conv_lstm/视频预测（ConvLSTM+Conv3D   **score : 0.04**）
+https://keras.io/examples/vision/conv_lstm/   视频预测（ConvLSTM+Conv3D   **score : 0.04**）
 
 
 
-预测5个变量的未来多步信息，然后迭代预测也比较差。（用同一个模型，一次预测5个变量，自回归迭代。典型的模型有FourCastNet）
+预测5个变量的未来多步信息，然后迭代预测，效果比较差。容易过拟合。（用同一个模型，一次预测5个变量，自回归迭代。比如FourCastNet。Transformer架构特别容易过拟合）
 
 
 
